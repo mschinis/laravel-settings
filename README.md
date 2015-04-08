@@ -31,6 +31,9 @@ Once installed, add the ServiceProvider to your provider array and the Setting a
 )
 ```
 ### Usage
+The package only stores the settings at the database, but more setting stores like redis/json file will be added soon.
+The default table is `settings`. If you wish to modify the table name, you can do so by publishing the configuration file using `php artisan config:publish mschinis/settings` and changing the table in the published config file.
+
 You can either access the setting store via its facade. A simple usage example is shown below.
 
 ```php
@@ -57,8 +60,6 @@ try{
 
 ?>
 ```
-
-The package only stores the settings at the database, but more setting stores like redis/json file will be added soon.
 
 ## Contact
 
