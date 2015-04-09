@@ -30,6 +30,14 @@ Once installed, add the ServiceProvider to your provider array and the Setting a
 
 )
 ```
+
+Setting up the database table is as easy as 1-2-3.
+
+1. Publish the migration file to your migrations using `php artisan migrate:publish mschinis/settings`
+2. Run the migration using `php artisan migrate`
+
+Wait, no 3rd step? Yup. Tha-Tha-Tha-That's all folks! Enjoy using the settings package :)
+
 ### Usage
 The package only stores the settings at the database, but more setting stores like redis/json file will be added soon.
 The default table is `settings`. If you wish to modify the table name, you can do so by publishing the configuration file using `php artisan config:publish mschinis/settings` and changing the table in the published config file.
@@ -61,6 +69,9 @@ try{
 ?>
 ```
 
+## Future work
+1. Multilingual support for various extra fields, such as description
+2. 
 ## Contact
 
 Open an issue on GitHub if you have any problems or suggestions.
