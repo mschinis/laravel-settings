@@ -1,5 +1,4 @@
 # Laravel Settings
-
 Web-Application settings for Laravel. An easy way to use yet powerful way to store and retrieve settings in your database. 
 Use Settings for storing things like website title or general variables that are used throughout your development, and want to make the modification of these values easy.
 
@@ -69,9 +68,14 @@ try{
 ?>
 ```
 
+
 ## Future work
-1. Multilingual support for various extra fields, such as description
-2. 
+
+1. Multilingual support for various extra fields, such as description.
+2. Different storing mechanisms such as redis/json file.
+3. Laravel 5 support.
+4. Want anything else added? Please open up an issue on Github!
+
 ## Contact
 
 Open an issue on GitHub if you have any problems or suggestions.
